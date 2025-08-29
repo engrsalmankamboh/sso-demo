@@ -116,10 +116,14 @@ Maintains all callback + test attempts with timestamp & results.
 Sparkles ✨
 Adds small animated sparkles for success actions.
 
-Screenshot:
+## Screenshots
 
-![Demo Screenshot](docs/screenshot.png)
-![History Screenshot](docs/history.png)
+### Sign-in UI
+<img src="https://github.com/engrsalmankamboh/sso-demo/blob/main/docs/screenshot.png?raw=1" alt="Demo Screenshot" />
+
+### History Log
+<img src="https://github.com/engrsalmankamboh/sso-demo/blob/main/docs/history.png?raw=1" alt="History Screenshot" />
+
 
 🎨 UI Features
 
