@@ -66,43 +66,43 @@ php artisan vendor:publish --tag=laravel-sso-config
 
 
 .env
-# Twitter / X (PKCE used only for Twitter in your package)
+#### Twitter / X (PKCE used only for Twitter in your package)
 SSO_TWITTER_CLIENT_ID=xxx
-SSO_TWITTER_CLIENT_SECRET=xxx   # leave empty if your X app is Public
+SSO_TWITTER_CLIENT_SECRET=xxx
 SSO_TWITTER_REDIRECT=http://localhost:8000/api/sso/callback/twitter
 
-# Google
+#### Google
 SSO_GOOGLE_CLIENT_ID=xxx
 SSO_GOOGLE_CLIENT_SECRET=xxx
 SSO_GOOGLE_REDIRECT=http://localhost:8000/api/sso/callback/google
 
-# Apple
+#### Apple
 SSO_APPLE_CLIENT_ID=xxx
 SSO_APPLE_CLIENT_SECRET=xxx
 SSO_APPLE_REDIRECT=http://localhost:8000/api/sso/callback/apple
 
-# Facebook
+#### Facebook
 SSO_FACEBOOK_CLIENT_ID=xxx
 SSO_FACEBOOK_CLIENT_SECRET=xxx
 SSO_FACEBOOK_REDIRECT=http://localhost:8000/api/sso/callback/facebook
 
-# GitHub
+#### GitHub
 SSO_GITHUB_CLIENT_ID=xxx
 SSO_GITHUB_CLIENT_SECRET=xxx
 SSO_GITHUB_REDIRECT=http://localhost:8000/api/sso/callback/github
 
-# LinkedIn
+#### LinkedIn
 SSO_LINKEDIN_CLIENT_ID=xxx
 SSO_LINKEDIN_CLIENT_SECRET=xxx
 SSO_LINKEDIN_REDIRECT=http://localhost:8000/api/sso/callback/linkedin
 
-# Microsoft
+#### Microsoft
 SSO_MICROSOFT_CLIENT_ID=xxx
 SSO_MICROSOFT_CLIENT_SECRET=xxx
 SSO_MICROSOFT_REDIRECT=http://localhost:8000/api/sso/callback/microsoft
 
 
-# 📚 API Routes
+## 📚 API Routes
 | Method | Endpoint                       | Description                                    |
 | ------ | ------------------------------ | ---------------------------------------------- |
 | GET    | `/`                            | UI demo page (Blade + Tailwind)                |
@@ -117,7 +117,7 @@ SSO_MICROSOFT_REDIRECT=http://localhost:8000/api/sso/callback/microsoft
 | POST   | `/api/sso/history/clear`       | Clear history                                  |
 
 
-# 🎨 UI Features
+## 🎨 UI Features
 
 Sign-in buttons
 Each provider shows a button with proper SVG icon + label.
@@ -134,7 +134,7 @@ Maintains all callback + test attempts with timestamp & results.
 Sparkles ✨
 Adds small animated sparkles for success actions.
 
-# 🎨 UI Features
+## 🎨 UI Features
 
 Sign-in buttons
 Each provider shows a button with proper SVG icon + label.
@@ -151,7 +151,7 @@ Maintains all callback + test attempts with timestamp & results.
 Sparkles ✨
 Adds small animated sparkles for success actions.
 
-# ✅ Flow
+## ✅ Flow
 
 User clicks a provider button → goes to OAuth consent page.
 
