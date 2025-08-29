@@ -31,23 +31,34 @@ It demonstrates:
 # 1. Clone this demo
 git clone https://github.com/yourname/laravel-sso-demo.git
 cd laravel-sso-demo
+```
 
+```bash
 # 2. Install dependencies
 composer install
+```
 
+```bash
 # 3. Serve the project
 php artisan serve
+```
 
+```bash
 #Then open:
 http://127.0.0.1:8000
+```
+
 
 ```bash
 composer require muhammadsalman/laravel-sso:^1.0
+```
 
 ```bash
 php artisan vendor:publish --tag=laravel-sso-config
+```
 
-```dotenv
+```bash
+.env
 # --- Twitter / X (PKCE used only for Twitter in your package) ---
 SSO_TWITTER_CLIENT_ID=xxx
 SSO_TWITTER_CLIENT_SECRET=xxx   # leave empty if your X app is Public
@@ -82,9 +93,9 @@ SSO_LINKEDIN_REDIRECT=http://localhost:8000/api/sso/callback/linkedin
 SSO_MICROSOFT_CLIENT_ID=xxx
 SSO_MICROSOFT_CLIENT_SECRET=xxx
 SSO_MICROSOFT_REDIRECT=http://localhost:8000/api/sso/callback/microsoft
+```
 
-
-#📚 API Routes
+# 📚 API Routes
 | Method | Endpoint                       | Description                                    |
 | ------ | ------------------------------ | ---------------------------------------------- |
 | GET    | `/`                            | UI demo page (Blade + Tailwind)                |
@@ -99,7 +110,7 @@ SSO_MICROSOFT_REDIRECT=http://localhost:8000/api/sso/callback/microsoft
 | POST   | `/api/sso/history/clear`       | Clear history                                  |
 
 
-🎨 UI Features
+# 🎨 UI Features
 
 Sign-in buttons
 Each provider shows a button with proper SVG icon + label.
@@ -116,16 +127,13 @@ Maintains all callback + test attempts with timestamp & results.
 Sparkles ✨
 Adds small animated sparkles for success actions.
 
-## Screenshots
+### Screenshots
+![screenshot](https://raw.githubusercontent.com/engrsalmankamboh/sso-demo/main/docs/screenshot.png)
 
-### Sign-in UI
-<img src="https://github.com/engrsalmankamboh/sso-demo/blob/main/docs/screenshot.png?raw=1" alt="Demo Screenshot" />
+### History
+![history](https://raw.githubusercontent.com/engrsalmankamboh/sso-demo/main/docs/history.png)
 
-### History Log
-<img src="https://github.com/engrsalmankamboh/sso-demo/blob/main/docs/history.png?raw=1" alt="History Screenshot" />
-
-
-🎨 UI Features
+# 🎨 UI Features
 
 Sign-in buttons
 Each provider shows a button with proper SVG icon + label.
@@ -142,9 +150,7 @@ Maintains all callback + test attempts with timestamp & results.
 Sparkles ✨
 Adds small animated sparkles for success actions.
 
-Screenshot:
-
-✅ Flow
+# ✅ Flow
 
 User clicks a provider button → goes to OAuth consent page.
 
@@ -158,7 +164,7 @@ Home page JS reads flags, shows toast + sparkles, fetches /api/sso/me and update
 
 Test runs and history visible in UI.
 
-🧪 Testing
+# 🧪 Testing
 
 Run Tests button → checks each provider’s redirect URL, logs results.
 
@@ -166,6 +172,6 @@ History section → shows full log of callbacks + tests.
 
 Clear History button → reset logs.
 
-📜 License
+# 📜 License
 
 MIT — free to use and modify.
