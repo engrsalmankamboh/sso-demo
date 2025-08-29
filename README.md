@@ -119,10 +119,10 @@ Adds small animated sparkles for success actions.
 Screenshot:
 
 ### Sign-in UI
-![Sign-in](docs/screenshot.png)
+![Demo Screenshot](https://raw.githubusercontent.com/engrsalmankamboh/sso-demo/main/docs/screenshot.png)
 
 ### History Log
-![History](docs/history.png)
+![History Screenshot](https://raw.githubusercontent.com/engrsalmankamboh/sso-demo/main/docs/history.png)
 
 🎨 UI Features
 
