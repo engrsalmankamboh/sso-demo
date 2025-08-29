@@ -201,16 +201,6 @@ SSO_MICROSOFT_REDIRECT=http://localhost:8000/api/sso/callback/microsoft
 
 ---
 
-## 12. Contributing
-
-Contributions are welcome!  
-1. Fork the repo  
-2. Create a feature branch  
-3. Commit your changes  
-4. Open a Pull Request  
-
----
-
-## 13. License
+## 11. License
 
 This project is open-sourced under the **MIT License**.
