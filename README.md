@@ -201,26 +201,6 @@ SSO_MICROSOFT_REDIRECT=http://localhost:8000/api/sso/callback/microsoft
 
 ---
 
-## 11. Troubleshooting
-
-### Screenshots not showing
-- Files must exist in `docs/` folder in `main` branch  
-- Names are **case-sensitive** (`screenshot.png` ≠ `Screenshot.PNG`)  
-- Use raw links in README:  
-  ```md
-  ![Demo](https://raw.githubusercontent.com/engrsalmankamboh/sso-demo/main/docs/screenshot.png)
-  ```
-
-### Session empty after callback
-- Ensure redirect URIs match exactly (`http://127.0.0.1:8000` vs `http://localhost:8000`)  
-- Run `php artisan optimize:clear`  
-
-### Twitter unauthorized_client
-- Public apps → no client_secret, PKCE used  
-- Confidential apps → set client_secret properly  
-
----
-
 ## 12. Contributing
 
 Contributions are welcome!  
