@@ -1,6 +1,13 @@
 # Laravel SSO Demo (API-first UI)
 
 This is a demo project showing how to integrate the [muhammadsalman/laravel-sso](https://packagist.org/packages/muhammadsalman/laravel-sso) package into a fresh Laravel app.  
+
+### Screenshots
+![screenshot](https://raw.githubusercontent.com/engrsalmankamboh/sso-demo/main/docs/screenshot.png)
+
+### History
+![history](https://raw.githubusercontent.com/engrsalmankamboh/sso-demo/main/docs/history.png)
+
 It demonstrates:
 
 - API-first routes (`/api/sso/...`)
@@ -57,43 +64,43 @@ composer require muhammadsalman/laravel-sso:^1.0
 php artisan vendor:publish --tag=laravel-sso-config
 ```
 
-```bash
+
 .env
-# --- Twitter / X (PKCE used only for Twitter in your package) ---
+# Twitter / X (PKCE used only for Twitter in your package)
 SSO_TWITTER_CLIENT_ID=xxx
 SSO_TWITTER_CLIENT_SECRET=xxx   # leave empty if your X app is Public
 SSO_TWITTER_REDIRECT=http://localhost:8000/api/sso/callback/twitter
 
-# --- Google ---
+# Google
 SSO_GOOGLE_CLIENT_ID=xxx
 SSO_GOOGLE_CLIENT_SECRET=xxx
 SSO_GOOGLE_REDIRECT=http://localhost:8000/api/sso/callback/google
 
-# --- Apple ---
+# Apple
 SSO_APPLE_CLIENT_ID=xxx
 SSO_APPLE_CLIENT_SECRET=xxx
 SSO_APPLE_REDIRECT=http://localhost:8000/api/sso/callback/apple
 
-# --- Facebook ---
+# Facebook
 SSO_FACEBOOK_CLIENT_ID=xxx
 SSO_FACEBOOK_CLIENT_SECRET=xxx
 SSO_FACEBOOK_REDIRECT=http://localhost:8000/api/sso/callback/facebook
 
-# --- GitHub ---
+# GitHub
 SSO_GITHUB_CLIENT_ID=xxx
 SSO_GITHUB_CLIENT_SECRET=xxx
 SSO_GITHUB_REDIRECT=http://localhost:8000/api/sso/callback/github
 
-# --- LinkedIn ---
+# LinkedIn
 SSO_LINKEDIN_CLIENT_ID=xxx
 SSO_LINKEDIN_CLIENT_SECRET=xxx
 SSO_LINKEDIN_REDIRECT=http://localhost:8000/api/sso/callback/linkedin
 
-# --- Microsoft ---
+# Microsoft
 SSO_MICROSOFT_CLIENT_ID=xxx
 SSO_MICROSOFT_CLIENT_SECRET=xxx
 SSO_MICROSOFT_REDIRECT=http://localhost:8000/api/sso/callback/microsoft
-```
+
 
 # 📚 API Routes
 | Method | Endpoint                       | Description                                    |
@@ -126,12 +133,6 @@ Maintains all callback + test attempts with timestamp & results.
 
 Sparkles ✨
 Adds small animated sparkles for success actions.
-
-### Screenshots
-![screenshot](https://raw.githubusercontent.com/engrsalmankamboh/sso-demo/main/docs/screenshot.png)
-
-### History
-![history](https://raw.githubusercontent.com/engrsalmankamboh/sso-demo/main/docs/history.png)
 
 # 🎨 UI Features
 
